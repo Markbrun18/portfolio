@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Folio Design</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="brand">brunmarkian<span class="brand-dot">.</span></a>
+      <nav class="nav-links">
+        <a href="#portfolio">Portfolio</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-right">
+          <p class="eyebrow">Video Editor | Graphic Designer</p>
+          <h1>Not just editing, it's storytelling.</h1>
+          <p class="hero-copy">From cinematic narratives to brand storytelling, I craft compelling visual experiences.</p>
+          <a class="button primary-button" href="#portfolio">View Portfolio</a>
+        </div>
+        <div class="hero-left">
+          <a class="hero-box hero-box--video" href="#portfolio" data-filter="video">
+            <div class="hero-box-title">Video</div>
+            <div class="hero-box-content">Cinematic wedding post-production, talking heads, podcast edit and more.
+            </div>
+          </a>
+          <a class="hero-box hero-box--motion" href="#portfolio" data-filter="motion">
+            <div class="hero-box-title">Motion Design</div>
+            <div class="hero-box-content">Animated branding collaterals.</div>
+          </a>
+          <a class="hero-box hero-box--graphic" href="#portfolio" data-filter="graphic">
+            <div class="hero-box-title">Graphic Design</div>
+            <div class="hero-box-content">Brand layouts</div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="portfolio" id="portfolio">
+      <div class="container section-heading">
+        <div class="portfolio-heading">
+          <p class="eyebrow">Portfolio</p>
+          <h2>Recent works</h2>
+        </div>
+        <div class="portfolio-controls">
+          <button class="filter-button active" type="button" data-filter="all">All</button>
+          <button class="filter-button" type="button" data-filter="video">Video</button>
+          <button class="filter-button" type="button" data-filter="motion">Motion</button>
+          <button class="filter-button" type="button" data-filter="graphic">Graphic</button>
+        </div>
+      </div>
+      <div class="container gallery-grid">
+        <article id="folio-video" class="gallery-card" data-kind="video" data-modal="modal-folio-video" data-title="Brand Story Video" data-description="A product launch film with polished storytelling and cinematic pacing." data-content="video">
+          <div class="gallery-top">Jordan & Matthew</div>
+          <div class="gallery-label">Wedding Post-production</div>
+          <div class="gallery-kind">Video</div>
+          <img class="gallery-media ratio-3-4" src="./assets/jorg.jpg" alt="Brand Story Video" />
+          <div class="gallery-bottom">Romantic wedding highlight of Jordan & Matthew, shows their love for each other, family and the place itself.</div>
+        </article>
+        <article id="folio-motion" class="gallery-card" data-kind="motion" data-modal="modal-folio-motion" data-title="Motion Design Series" data-description="A collection of animated scenes for social media and interface motion." data-content="image">
+          <div class="gallery-top">JC Creative Snaps</div>
+          <div class="gallery-label">Logo Animation</div>
+          <div class="gallery-kind">Motion</div>
+          <img class="gallery-media ratio-3-4" src="./assets/jcccreative.jpg" alt="Motion Design Series" />
+          <div class="gallery-bottom">A brand logo animation.</div>
+        </article>
+        <article id="folio-graphic" class="gallery-card" data-kind="graphic" data-modal="modal-folio-graphic" data-title="Graphic Design System" data-description="A visual system for printed and web materials with bold typography." data-content="image">
+          <div class="gallery-top">Sugbo Macchiato</div>
+          <div class="gallery-label">Marketing Material</div>
+          <div class="gallery-kind">Graphic</div>
+          <img class="gallery-media ratio-3-4" src="./assets/sugboblue.jpg" alt="Graphic Design System" />
+          <div class="gallery-bottom">New menu layout for Sugbo Macchiatio.</div>
+        </article>
+        <article class="gallery-card" data-kind="video" data-modal="modal-brand-identity" data-title="Brand Identity Film" data-description="A cinematic brand story video for a new creative studio." data-content="video">
+          <div class="gallery-top">JK Art Repdos</div>
+          <div class="gallery-label">Talking Head Reel</div>
+          <div class="gallery-kind">Video</div>
+          <img class="gallery-media ratio-3-4" src="./assets/jk1.jpg" alt="Brand Identity Film" />
+          <div class="gallery-bottom">A personal brand story talking head content</div>
+        </article>
+        <article class="gallery-card" data-kind="video" data-modal="modal-interactive-exp" data-title="Interactive Experience" data-description="A web-based experience that blends motion and narrative storytelling." data-content="video">
+          <div class="gallery-top">Date with the Muse</div>
+          <div class="gallery-label">Testimonial Reel</div>
+          <div class="gallery-kind">Video</div>
+          <img class="gallery-media ratio-3-4" src="./assets/anna.jpg" alt="Interactive Experience" />
+          <div class="gallery-bottom">A digital concept that connects motion design with immersive visual content.</div>
+        </article>
+        <article class="gallery-card" data-kind="graphic" data-modal="modal-editorial" data-title="Editorial Design" data-description="A layout system for editorial features, reports, and marketing collateral." data-content="image">
+          <div class="gallery-top">Sugbo Macchiato</div>
+          <div class="gallery-label">Marketing Material</div>
+          <div class="gallery-kind">Graphic</div>
+          <img class="gallery-media ratio-3-4" src="./assets/strabersugb.jpg" alt="Editorial Design" />
+          <div class="gallery-bottom">A new menu layout for Sugbo Macchiato.</div>
+        </article>
+        <article class="gallery-card" data-kind="motion" data-modal="modal-social-motion" data-title="Social Motion" data-description="A set of short animated clips built for social video distribution." data-content="video">
+          <div class="gallery-top">Sugbo Macchiato</div>
+          <div class="gallery-label">Mom's Day Appreciation</div>
+          <div class="gallery-kind">Motion</div>
+          <img class="gallery-media ratio-3-4" src="./assets/submom.jpg" alt="Social Motion" />
+          <div class="gallery-bottom">Mothers day material for Sugbo Macchiato.</div>
+        </article>
+        <article class="gallery-card" data-kind="video" data-modal="modal-cinematic-promo" data-title="Cinematic Promo" data-description="A high-impact promotional video for luxury brand launching." data-content="video">
+          <div class="gallery-top">Real Estate</div>
+          <div class="gallery-label">Property Reel</div>
+          <div class="gallery-kind">Video</div>
+          <img class="gallery-media ratio-3-4" src="./assets/realreel.jpg" alt="Cinematic Promo" />
+          <div class="gallery-bottom">Real estate property reel.</div>
+        </article>
+        <article class="gallery-card" data-kind="video" data-modal="modal-product-demo" data-title="Product Demo Video" data-description="An engaging product demonstration with dynamic transitions and effects." data-content="video">
+          <div class="gallery-top">Istoryang Kinabuhi</div>
+          <div class="gallery-label">Podcast Edit</div>
+          <div class="gallery-kind">Video</div>
+          <img class="gallery-media ratio-3-4" src="./assets/ador.jpg" alt="Product Demo Video" />
+          <div class="gallery-bottom">Podcast that share insights about life, money and trending issues</div>
+        </article>
+        <article class="gallery-card" data-kind="video" data-modal="modal-testimonial-video" data-title="Testimonial Series" data-description="A collection of client testimonial videos with refined editing." data-content="video">
+          <div class="gallery-top">FanYouPh</div>
+          <div class="gallery-label">Game Reel</div>
+          <div class="gallery-kind">Video</div>
+          <img class="gallery-media ratio-3-4" src="./assets/panpan.jpg" alt="Testimonial Series" />
+          <div class="gallery-bottom">A game reel that talks about latest issues and trends in the gaming industry.</div>
+        </article>
+        <article class="gallery-card" data-kind="video" data-modal="modal-commercial-spot" data-title="Commercial Spot" data-description="A 30-second broadcast-ready commercial with impactful messaging." data-content="video">
+          <div class="gallery-top">Unlearning Wisdom</div>
+          <div class="gallery-label">Motivational Youtube Content</div>
+          <div class="gallery-kind">Video</div>
+          <img class="gallery-media ratio-3-4" src="./assets/Uw.jpg" alt="Commercial Spot" />
+          <div class="gallery-bottom">A channel built to inspire and rewire hobbies for a better life.</div>
+        </article>
+        <article class="gallery-card" data-kind="video" data-modal="modal-documentary-style" data-title="Documentary Style" data-description="A long-form documentary-style video exploring brand heritage." data-content="video">
+          <div class="gallery-top">JK Art Repdos</div>
+          <div class="gallery-label">Talking Head Reel</div>
+          <div class="gallery-kind">Video</div>
+          <img class="gallery-media ratio-3-4" src="./assets/jk2.jpg" alt="Documentary Style" />
+          <div class="gallery-bottom">Personal branding and content creation journey talking head reels</div>
+        </article>
+        <article class="gallery-card" data-kind="video" data-modal="modal-event-coverage" data-title="Event Coverage" data-description="Professional video coverage of corporate events and brand activations." data-content="video">
+          <div class="gallery-top">Craig and Sebastian</div>
+          <div class="gallery-label">Wedding Post-production</div>
+          <div class="gallery-kind">Video</div>
+          <img class="gallery-media ratio-3-4" src="./assets/craigandseb.jpg" alt="Event Coverage" />
+          <div class="gallery-bottom">Cinematic wedding film of a beautiful love story.</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container about-grid">
+        <div>
+          <p class="eyebrow">About</p>
+          <h2>Helping you tell your story</h2>
+          <p>With nearly 10 years of experience in the creative industry, I began my career in jewelry photo retouching before earning a BS in Graphics and Design. In the last four years, I have specialized in wedding post-production and video editing, crafting polished wedding films, highlights, and visual content that capture genuine emotions and memorable moments. Passionate about storytelling and attention to detail, I strive to deliver high-quality work that brings every client's vision to life. </p>
+        </div>
+        <div class="timeline">
+          <div class="timeline-line"></div>
+          <div class="timeline-item">
+            <span class="timeline-dot"></span>
+            <div class="timeline-content">
+              <span class="timeline-year">2025 - Present</span>
+              <span class="timeline-company">Wedditor Inc.</span>
+              <span class="timeline-position">Video Editor</span>
+              <p>Edit all wedding day video deliverables ensuring top - notch quality.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-dot"></span>
+            <div class="timeline-content">
+              <span class="timeline-year">2022 - 2024</span>
+              <span class="timeline-company">NST Pictures / SNOD Inc.</span>
+              <span class="timeline-position">Junior Video Editor</span>
+              <p>Craft wedding reels and trailer films from scratch, color grading and basic audio editing</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-dot"></span>
+            <div class="timeline-content">
+              <span class="timeline-year">2021</span>
+              <span class="timeline-company">RipeConcepts Inc.</span>
+              <span class="timeline-position">Design Associate</span>
+              <p>Proof read and edit client deliverables ensuring printing accuracy.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-dot"></span>
+            <div class="timeline-content">
+              <span class="timeline-year">2018 - 2022</span>
+              <span class="timeline-company">BS Graphics and Design</span>
+              <span class="timeline-position">Cebu Technological University</span>
+              <span class="timeline-position">Cumlaude</span>
+              <p>BS Graphics and Design is benchmarked on multimedia arts desciplines, traditional art, graphic designs, basic photography and film production and post, industrial and web design.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-dot"></span>
+            <div class="timeline-content">
+              <span class="timeline-year">2017 - 2018</span>
+              <span class="timeline-company">Myles on d Spot Printing</span>
+              <span class="timeline-position">Graphic Designer</span>
+              <p>Layout and print marketing materials and personalized stuffs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="container footer-grid">
+      <div>
+        <p class="brand-footer">brunmarkian<span class="brand-dot">.</span></p>
+        <p>Not just editing, it's storytelling.</p>
+      </div>
+      <div>
+        <p>Contact</p>
+        <p>brunmarkian@gmail.com</p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="modal-folio-video" class="modal-backdrop" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true">
+      <button class="modal-close">×</button>
+      <div class="modal-inner">
+        <div class="modal-left modal-media">
+          <iframe
+            loading="lazy" title="Gumlet video player"
+            src="https://play.gumlet.io/embed/6a2ec6eba0e544789ce8dd9e"
+            style="border:none; position: absolute; top: 0; left: 0; height: 100%; width: 100%;"
+          referrerpolicy="origin"
+          allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;clipboard-write;">
+          </iframe>
+        </div>
+        <div class="modal-right">
+          <h3>Jordan & Matthew</h3>
+          <p>Romantic wedding highlight of Jordan & Matthew, shows their love for each other, family and the place itself.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-folio-motion" class="modal-backdrop" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true">
+      <button class="modal-close">×</button>
+      <div class="modal-inner">
+        <div class="modal-left modal-media">
+         <iframe
+            loading="lazy" title="Gumlet video player"
+            src="https://play.gumlet.io/embed/6a2ec027a0e544789ce8623d"
+            style="border:none; position: absolute; top: 0; left: 0; height: 100%; width: 100%;"
+          referrerpolicy="origin"
+          allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;clipboard-write;">
+          </iframe>
+        </div>
+        <div class="modal-right">
+          <h3>JC Creative Snaps</h3>
+          <p>A photography brand logo animation, inspired by island sunset.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-folio-graphic" class="modal-backdrop" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true">
+      <button class="modal-close">×</button>
+      <div class="modal-inner">
+        <div class="modal-left modal-media">
+          <img src="./assets/sugbbcontent.jpg" alt="Graphic Design System" />
+        </div>
+        <div class="modal-right">
+          <h3>Sugbo Macchiato</h3>
+          <p>Blueberry series menu launching.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-brand-identity" class="modal-backdrop" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true">
+      <button class="modal-close">×</button>
+      <div class="modal-inner">
+        <div class="modal-left modal-media">
+            <iframe
+            loading="lazy" title="Gumlet video player"
+            src="https://play.gumlet.io/embed/6a2ec02636223b22766c8e72"
+            style="border:none; position: absolute; top: 0; left: 0; height: 100%; width: 100%;"
+          referrerpolicy="origin"
+          allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;clipboard-write;">
+          </iframe>
+        </div>
+        <div class="modal-right">
+          <h3>JK Art Repdos</h3>
+          <p>Personal brand reels, inspiring others to take a step establishing their own personal brand.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-campaign-launch" class="modal-backdrop" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true">
+      <button class="modal-close">×</button>
+      <div class="modal-inner">
+        <div class="modal-left modal-media">
+          <img src="./assets/Dominique and Sean.jpg" alt="Campaign Launch" />
+        </div>
+        <div class="modal-right">
+          <h3>Campaign Launch</h3>
+          <p>Strategic launch visuals for a seasonal product campaign.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-interactive-exp" class="modal-backdrop" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true">
+      <button class="modal-close">×</button>
+      <div class="modal-inner">
+        <div class="modal-left modal-media">
+          <iframe
+            loading="lazy" title="Gumlet video player"
+            src="https://play.gumlet.io/embed/6a2ec02693651fdca955bcd7"
+            style="border:none; position: absolute; top: 0; left: 0; height: 100%; width: 100%;"
+          referrerpolicy="origin"
+          allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;clipboard-write;">
+          </iframe>
+        </div>
+        <div class="modal-right">
+          <h3>Date with the Muse</h3>
+          <p>A trial project for testimonial reels about authors writing books with date with the muse assistance.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-editorial" class="modal-backdrop" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true">
+      <button class="modal-close">×</button>
+      <div class="modal-inner">
+        <div class="modal-left modal-media">
+          <img src="./assets/sugbstrcons.jpg" alt="Editorial Design" />
+        </div>
+        <div class="modal-right">
+          <h3>Sugbo Macchiato</h3>
+          <p>Strawberry Series menu launching.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-social-motion" class="modal-backdrop" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true">
+      <button class="modal-close">×</button>
+      <div class="modal-inner">
+        <div class="modal-left modal-media">
+          <iframe
+            loading="lazy" title="Gumlet video player"
+            src="https://play.gumlet.io/embed/6a2ec02636223b22766c8e5b"
+            style="border:none; position: absolute; top: 0; left: 0; height: 100%; width: 100%;"
+          referrerpolicy="origin"
+          allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;clipboard-write;">
+          </iframe>
+        </div>
+        <div class="modal-right">
+          <h3>Sugbo Macchiato</h3>
+          <p>Mothers day greeting publication material.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-cinematic-promo" class="modal-backdrop" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true">
+      <button class="modal-close">×</button>
+      <div class="modal-inner">
+        <div class="modal-left modal-media">
+      <iframe
+            loading="lazy" title="Gumlet video player"
+            src="https://play.gumlet.io/embed/6a31e7b9bf17ac22ca4e9015"
+            style="border:none; position: absolute; top: 0; left: 0; height: 100%; width: 100%;"
+          referrerpolicy="origin"
+          allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;clipboard-write;">
+          </iframe>
+        </div>
+        <div class="modal-right">
+          <h3>Real Estate</h3>
+          <p>This edit is a take on joelvanbeekfilms edit challlenge.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-product-demo" class="modal-backdrop" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true">
+      <button class="modal-close">×</button>
+      <div class="modal-inner">
+        <div class="modal-left modal-media">
+          <iframe
+            loading="lazy" title="Gumlet video player"
+            src="https://play.gumlet.io/embed/6a2ec02636223b22766c8e64"
+            style="border:none; position: absolute; top: 0; left: 0; height: 100%; width: 100%;"
+          referrerpolicy="origin"
+          allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;clipboard-write;">
+          </iframe>
+        </div>
+        <div class="modal-right">
+          <h3>Istoryang Kinabuhi</h3>
+          <p>Podcast that share insights about life money and trending issues.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-testimonial-video" class="modal-backdrop" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true">
+      <button class="modal-close">×</button>
+      <div class="modal-inner">
+        <div class="modal-left modal-media">
+          <iframe
+            loading="lazy" title="Gumlet video player"
+            src="https://play.gumlet.io/embed/6a2ec02636223b22766c8e55"
+            style="border:none; position: absolute; top: 0; left: 0; height: 100%; width: 100%;"
+          referrerpolicy="origin"
+          allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;clipboard-write;">
+          </iframe>
+        </div>
+        <div class="modal-right">
+          <h3>FanYouPh</h3>
+          <p>A trial project for gaming industry content creation.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-commercial-spot" class="modal-backdrop" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true">
+      <button class="modal-close">×</button>
+      <div class="modal-inner">
+        <div class="modal-left modal-media">
+          <iframe
+            loading="lazy" title="Gumlet video player"
+            src="https://play.gumlet.io/embed/6a2ec93536223b22766d2fc6"
+            style="border:none; position: absolute; top: 0; left: 0; height: 100%; width: 100%;"
+          referrerpolicy="origin"
+          allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;clipboard-write;">
+          </iframe>
+        </div>
+        <div class="modal-right">
+          <h3>Unlearning Wisdom</h3>
+          <p>Faceless video content that share ideas how to rewire hobbies for a better life.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-documentary-style" class="modal-backdrop" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true">
+      <button class="modal-close">×</button>
+      <div class="modal-inner">
+        <div class="modal-left modal-media">
+            <iframe
+            loading="lazy" title="Gumlet video player"
+            src="https://play.gumlet.io/embed/6a2ec026a0e544789ce86237"
+            style="border:none; position: absolute; top: 0; left: 0; height: 100%; width: 100%;"
+          referrerpolicy="origin"
+          allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;clipboard-write;">
+          </iframe>
+        </div>
+        <div class="modal-right">
+          <h3>JK Art Repdos</h3>
+          <p>Talking head personal brand content that share how to take a step to creating person contents and grow followers.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-event-coverage" class="modal-backdrop" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true">
+      <button class="modal-close">×</button>
+      <div class="modal-inner">
+        <div class="modal-left modal-media">
+          <iframe
+            loading="lazy" title="Gumlet video player"
+            src="https://play.gumlet.io/embed/6a2ec1d993651fdca955dd55"
+            style="border:none; position: absolute; top: 0; left: 0; height: 100%; width: 100%;"
+          referrerpolicy="origin"
+          allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;clipboard-write;">
+          </iframe>
+        </div>
+        <div class="modal-right">
+          <h3>Craig and Sebastian</h3>
+          <p>Cinematic wedding highlight of a beautiful love story.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
