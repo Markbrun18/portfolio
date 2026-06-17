@@ -1,3 +1,31 @@
+// Hamburger menu toggle
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('navLinks');
+
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  navLinks.classList.toggle('active');
+  hamburger.setAttribute('aria-expanded', hamburger.classList.contains('active'));
+});
+
+// Close menu when a link is clicked
+navLinks.querySelectorAll('a').forEach((link) => {
+  link.addEventListener('click', () => {
+    hamburger.classList.remove('active');
+    navLinks.classList.remove('active');
+    hamburger.setAttribute('aria-expanded', 'false');
+  });
+});
+
+// Close menu when clicking outside
+document.addEventListener('click', (e) => {
+  if (!hamburger.contains(e.target) && !navLinks.contains(e.target)) {
+    hamburger.classList.remove('active');
+    navLinks.classList.remove('active');
+    hamburger.setAttribute('aria-expanded', 'false');
+  }
+});
+
 const cards = document.querySelectorAll('.gallery-card');
 const filterButtons = document.querySelectorAll('.filter-button');
 const galleryCards = document.querySelectorAll('.gallery-card');
@@ -44,6 +72,22 @@ if (aboutSection && firstTimelineItem && 'IntersectionObserver' in window) {
   firstTimelineItem.classList.add('appear');
 }
 
+// Function to stop all media in a modal
+function stopModalMedia(modal) {
+  // Stop all video elements
+  modal.querySelectorAll('video').forEach((video) => {
+    video.pause();
+    video.currentTime = 0;
+  });
+
+  // Stop all iframes (Vimeo, YouTube, etc.)
+  modal.querySelectorAll('iframe').forEach((iframe) => {
+    const src = iframe.src;
+    iframe.src = '';
+    iframe.src = src;
+  });
+}
+
 // Handle individual modal open for each gallery card
 cards.forEach((card) => {
   card.addEventListener('click', () => {
@@ -61,6 +105,7 @@ document.querySelectorAll('.modal-close').forEach((closeBtn) => {
   closeBtn.addEventListener('click', (e) => {
     const modal = e.target.closest('.modal-backdrop');
     if (modal) {
+      stopModalMedia(modal);
       modal.classList.remove('active');
       modal.setAttribute('aria-hidden', 'true');
     }
@@ -71,6 +116,7 @@ document.querySelectorAll('.modal-close').forEach((closeBtn) => {
 document.querySelectorAll('.modal-backdrop').forEach((modal) => {
   modal.addEventListener('click', (event) => {
     if (event.target === modal) {
+      stopModalMedia(modal);
       modal.classList.remove('active');
       modal.setAttribute('aria-hidden', 'true');
     }
